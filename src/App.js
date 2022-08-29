@@ -1,12 +1,15 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductPage from "./pages/ProductPage"
 import Home from "./pages/Home";
+import Navbar from "./components/Navbar"
+import Cart from "./components/Cart"
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <p>Navigation</p>
+        <Navbar />
+        <Cart />
         <Switch>
           <Route path="/products/:handle">
             <ProductPage />
