@@ -9,6 +9,7 @@ const Hero = () => {
         objectPosition={["top", "center"]}/>
 
         <Text
+            className="tracking-in-expand-fwd"
             position="absolute"
             bottom="20%"
             w="100%"
